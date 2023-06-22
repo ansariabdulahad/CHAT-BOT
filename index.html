@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS FILE LINK -->
     <link rel="stylesheet" href="./index.css">
+    <!-- CDN JS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CHAT-BOT</title>
 </head>
-<body>
-    <h1>Welcome to CHAT-BOT</h1>
+<body class="show-chatbot">
+
+    <!-- START CODING OF CHAT BOT -->
+
+    <!-- OPEN AND CLOSE TOGGLER BUTTON -->
+    <button class="chatbot-toggler">
+        <span class="fa-regular fa-comment"></span>
+        <span class="fa-solid fa-xmark"></span>
+    </button>
+
+    <!-- MAIN CONTAINER ON CHAT BOT -->
+    <div class="chatbot">
+        
+        <!-- HEADER CODING -->
+        <header>
+            <h2>CHAT-BOT</h2>
+            <!-- CLOSE ICONE WHEN CHAT-BOT IS ON MOBILE DEVICE -->
+            <span class="fa-solid fa-xmark"></span>
+        </header>
+
+        <!-- BODY -->
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="fa-solid fa-robot"></span>
+                <p>Hi there <br> How can i help you !</p>
+            </li>
+            <li class="chat outgoing">
+                <p>Hi there i am user</p>
+            </li>
+        </ul>
+
+        <!-- FOOTER -->
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span class="fa-regular fa-paper-plane"></span>
+        </div>
+    </div>
 
     <!-- JS FILE LINK -->
     <script src="./index.js"></script>
